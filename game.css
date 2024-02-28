@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#parent{
+    border: 1px solid black;
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin: auto;
+    margin-top: 100px;
+    cursor: pointer;
+    
+}
+#one{
+border: 1px solid black;
+width:auto ;
+height:auto;
+background-color: yellowgreen;
+transition: 2s;
+}
+#one:hover{
+    transform: scale(1.1);
+    background-color: rgb(253, 136, 175);
+}
+#two{
+    border: 1px solid black;
+    width:auto ;
+    height: auto;
+    background-color: red;
+    transition: 2s;
+    }
+    #two:hover{
+        transform: scale(1.1);
+        background-color: brown;
+    }
+ #three{
+        border: 1px solid black;
+        width:auto;
+        height:auto;
+    background-color: palevioletred;
+    transition: 2s;
+        }
+        #three:hover{
+            transform: scale(1.1);
+            background-color:mediumorchid;
+        }
+#four{
+    border: 1px solid black;
+    width:auto ;
+    height:auto;
+    background-color: wheat;
+    transition: 2s;
+    } 
+    #four:hover{
+        transform: scale(1.1);
+        background-color: peru;
+    }   
+#five{
+    border: 1px solid black;
+    width:auto ;
+    height:auto;
+    background-color:olive ;
+    transition: 2s;
+    } 
+    #five:hover{
+        transform: scale(1.1);
+        background-color: green;
+    }         
+ #six{
+    border: 1px solid black;
+    width:auto;
+    height:auto;
+    background-color: lime;
+    transition: 2s;
+    }  
+    #six:hover{
+        transform: scale(1.1);
+        background-color: mediumaquamarine;
+    }          
+#seven{
+    border: 1px solid black;
+    width:auto ;
+    height:auto;
+    background-color:blue ;
+    transition: 2s;
+    }  
+    #seven:hover{
+        transform: scale(1.1);
+        background-color: aqua;
+    }              
+ #eight{
+    border: 1px solid black;
+    width:auto;
+    height:auto;
+    background-color: brown;
+    transition: 2s;
+    } 
+    #eight:hover{
+        transform: scale(1.1);
+        background-color: rgb(8, 8, 8);
+    }                  
+ #nine{
+    border: 1px solid black;
+    width:auto;
+    height:auto;
+    background-color: mediumpurple;
+    transition: 2s;
+    } 
+    #nine:hover{
+        transform: scale(1.1);
+        background-color: yellow;
+    } 
+    
+    button{
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 100px;
+        height: 50px;
+        background-color: brown;
+        color: white;
+        margin-left: 350px;
+     margin-bottom: 500px;
+     cursor: pointer;
+    }
+    button:hover{
+        transform: scale(1.4);
+        background-color: aqua;
+        color: black;
+        border: none;
+    }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+<div id="parent">
+    <div id="one" onclick="nexT(event)"></div>
+    <div id="two" onclick="nexT(event)"></div>
+    <div id="three" onclick="nexT(event)"></div>
+    <div id="four" onclick="nexT(event)"></div>
+    <div id="five" onclick="nexT(event)"></div>
+    <div id="six" onclick="nexT(event)"></div>
+    <div id="seven" onclick="nexT(event)"></div>
+    <div id="eight" onclick="nexT(event)"></div>
+    <div id="nine" onclick="nexT(event)"></div>
+</div>
+<button onclick="reset()">Reset</button>
+<script>
+    var currentPlayer = "X"; // Initialize the current player
+    var stYle = document.getElementById('parent')
+
+    function nexT(event) {
+        if (event.target.innerHTML === "") { // Check if the cell is empty
+            event.target.innerHTML = currentPlayer; // Set content to X or O
+            currentPlayer = currentPlayer === "X" ? "O" : "X"; // Toggle current player
+        }
+        stYle.style.color = 'white';
+        stYle.style.fontFamily = 'Tahoma';
+        stYle.style.fontSize = '50px';
+        stYle.style.textAlign= 'center'
+    }
+
+    function reset() {
+        var cells = document.querySelectorAll("#parent div");
+        cells.forEach(function(cell) {
+            cell.innerHTML = ""; // Reset cell content
+        });
+        currentPlayer = "X"; // Reset current player to X
+    }
+</script>
+      
+</body>
+</html>
